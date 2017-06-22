@@ -1,7 +1,12 @@
 module.exports = {
-  "ecmaFeatures": {
-    "modules": true,
-    "jsx": true
+  "parserOptions": {
+    "allowImportExportEverywhere": false,
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "modules": true,
+      "jsx": true
+    }
   },
   "env": {
     "browser": true,
@@ -17,13 +22,6 @@ module.exports = {
     "plugin:react/recommended"
   ],
   "parser": "babel-eslint",
-  "parserOptions": {
-    "sourceType": "module",
-    "allowImportExportEverywhere": false,
-    "ecmaFeatures": {
-      "jsx": true
-    }
-  },
   "rules": {
     "comma-dangle": [
       2,

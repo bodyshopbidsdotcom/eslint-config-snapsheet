@@ -191,7 +191,7 @@ module.exports = {
     "no-trailing-spaces": 0,
     "no-underscore-dangle": 0,
     "no-unneeded-ternary": 0,
-    "object-curly-spacing": 0,
+    "object-curly-spacing": [2, "always"],
     "one-var": 0,
     "operator-assignment": 0,
     "operator-linebreak": 0,
@@ -217,7 +217,7 @@ module.exports = {
     "arrow-spacing": 0,
     "constructor-super": 2,
     "generator-star-spacing": 0,
-    "no-arrow-condition": 0,
+    "no-confusing-arrow": 2,
     "no-class-assign": 2,
     "no-const-assign": 2,
     "no-dupe-class-members": 2,
@@ -228,9 +228,11 @@ module.exports = {
     "prefer-const": 2,
     "prefer-reflect": 0,
     "prefer-spread": 0,
-    "prefer-template": 0,
+    "prefer-template": 2,
     "require-yield": 0,
+    "keyword-spacing": 2,
     "react/prop-types": 2,
-    "react/prefer-stateless-function": 2
+    "react/prefer-stateless-function": 2,
+    "jsx-quotes": ["error", "prefer-double"]
   }
 }

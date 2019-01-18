@@ -64,7 +64,7 @@ module.exports = {
       10
     ],
     'consistent-return': 0,
-    'curly': 0,
+    'curly': 2,
     'default-case': 0,
     'dot-location': 0,
     'dot-notation': 0,
@@ -133,7 +133,7 @@ module.exports = {
       }
     ],
     'no-use-before-define': 0,
-    'callback-return': 2,
+    'callback-return': 0,
     'global-require': 2,
     'handle-callback-err': 2,
     'no-mixed-requires': 0,
@@ -144,7 +144,7 @@ module.exports = {
     'no-sync': 0,
     'array-bracket-spacing': 0,
     'block-spacing': 0,
-    'brace-style': 0,
+    'brace-style': 2,
     'camelcase': 0,
     'comma-spacing': 0,
     'comma-style': 0,
@@ -156,15 +156,24 @@ module.exports = {
     'id-length': 0,
     'id-match': 0,
     'indent': [
-      0,
-      2
+      2,
+      2,
+      { 'SwitchCase': 1 }
     ],
     'jsx-quotes': 0,
     'key-spacing': 0,
     'linebreak-style': 0,
     'lines-around-comment': 0,
     'max-depth': 0,
-    'max-len': 0,
+    'max-len': [
+      2,
+      {
+        'code': 100,
+        'ignoreStrings': true,
+        'ignoreTemplateLiterals'; true,
+        'ignoreRegExpLiterals': true
+      }
+    ],
     'max-nested-callbacks': 0,
     'max-params': 0,
     'max-statements': [
@@ -197,7 +206,7 @@ module.exports = {
     'operator-linebreak': 0,
     'padded-blocks': 0,
     'quote-props': 0,
-    'quotes': 0,
+    'quotes': [2, 'single'],
     'require-jsdoc': 0,
     'semi-spacing': 2,
     'semi': 2,
@@ -213,11 +222,11 @@ module.exports = {
     'spaced-comment': 0,
     'wrap-regex': 0,
     'arrow-body-style': 0,
-    'arrow-parens': 0,
+    'arrow-parens': 2,
     'arrow-spacing': 0,
     'constructor-super': 2,
     'generator-star-spacing': 0,
-    'no-confusing-arrow': 2,
+    'no-confusing-arrow': 0,
     'no-class-assign': 2,
     'no-const-assign': 2,
     'no-dupe-class-members': 2,
@@ -231,6 +240,8 @@ module.exports = {
     'prefer-template': 2,
     'require-yield': 0,
     'keyword-spacing': 2,
+    'react/display-name': 0,
+    'react/jsx-curly-spacing': [2, 'always'],
     'react/prop-types': 2,
     'react/prefer-stateless-function': 2,
     'jsx-quotes': ['error', 'prefer-double']
